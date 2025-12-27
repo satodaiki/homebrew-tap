@@ -5,20 +5,20 @@
 class Cntdwn < Formula
   desc ""
   homepage ""
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/satodaiki/cntdwn/releases/download/v0.1.4/cntdwn_Darwin_x86_64.tar.gz"
-      sha256 "8a1c1ba5a796d31df11bac16f681221624773cf8ab2cd4ff6392cb9d4e107583"
+      url "https://github.com/satodaiki/cntdwn/releases/download/v0.1.5/cntdwn_Darwin_x86_64.tar.gz"
+      sha256 "1e4a8eadcb8cc8a9c67773462508a42d7b2a70e2289b2161b16ded68e61d208a"
 
       def install
         bin.install "cntdwn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/satodaiki/cntdwn/releases/download/v0.1.4/cntdwn_Darwin_arm64.tar.gz"
-      sha256 "c2d0cd036d26a38326b8321f01b75852120759d2d902651ae3ae4b45ff3c0b67"
+      url "https://github.com/satodaiki/cntdwn/releases/download/v0.1.5/cntdwn_Darwin_arm64.tar.gz"
+      sha256 "fbb8a5e0bb78eab03d9c70e31ee391dd180c3971f4cfe4f502bde410b54326e5"
 
       def install
         bin.install "cntdwn"
@@ -28,15 +28,15 @@ class Cntdwn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/satodaiki/cntdwn/releases/download/v0.1.4/cntdwn_Linux_x86_64.tar.gz"
-      sha256 "f586b9d93fe63260aa376a6a76e45e752d512968b8e1526c7744d98be527649f"
+      url "https://github.com/satodaiki/cntdwn/releases/download/v0.1.5/cntdwn_Linux_x86_64.tar.gz"
+      sha256 "3a0024ec18bf24a838427acf1f618e5d439a19c24fcfdaf18599e4440fc9f34a"
       def install
         bin.install "cntdwn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/satodaiki/cntdwn/releases/download/v0.1.4/cntdwn_Linux_arm64.tar.gz"
-      sha256 "4d2d65e88b59770cc76820eb4a2beabfdbc5e09cc8b1c5276552aa489ee61da1"
+      url "https://github.com/satodaiki/cntdwn/releases/download/v0.1.5/cntdwn_Linux_arm64.tar.gz"
+      sha256 "27e1365edf13306969b2f2b0686a2355dc9ea3d5848a55fc283785b04b2e4d9a"
       def install
         bin.install "cntdwn"
       end
